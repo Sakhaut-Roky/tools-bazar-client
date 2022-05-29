@@ -38,15 +38,15 @@ const Portfolio = () => {
                 <div className='ml-5 border-2'>
                     <h2>Personal Information</h2>
                     <small>Father's Name</small>
-                    <h2>Md. Abdur Rab</h2>
+                    <h2>Md. Ekramul Haque</h2>
                     <small>Mother's Name</small>
-                    <h2>Nasrin Akter</h2>
+                    <h2>Sahar Banu</h2>
                     <small>Date of Birth</small>
-                    <h2>December 1, 1998</h2>
+                    <h2>November 14, 1999</h2>
                     <small>Nationality</small>
                     <h2>Bangladeshi</h2>
                     <small>National Id No</small>
-                    <h2>19987510787000164</h2>
+                    <h2>6454269645</h2>
                 </div>
             </section>
             <section className='text-left bg-base-200 mt-5'>
