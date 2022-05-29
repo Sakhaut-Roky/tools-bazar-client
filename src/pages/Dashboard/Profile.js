@@ -25,7 +25,7 @@ const Profile = () => {
             phone: event.target.phone.value,
             img: event.target.img.value
         }
-        fetch('http://localhost:5000/user', {
+        fetch('https://blooming-ravine-72087.herokuapp.com/user', {
             method: "POST",
             headers: {
                 'content-type': "application/json"
@@ -56,7 +56,7 @@ const Profile = () => {
     useEffect( () => {
         const getItems = async() => {
         const email = user.email;
-            const url = `http://localhost:5000/user?email=${email}`;
+            const url = `https://blooming-ravine-72087.herokuapp.com/user?email=${email}`;
             const {data} = await axios.get(url)
             setItems(data);
             try{

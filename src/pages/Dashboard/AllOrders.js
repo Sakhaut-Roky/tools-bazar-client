@@ -4,7 +4,7 @@ import {useQuery} from 'react-query';
 import Loading from '../Shared/Loading';
 
 const AllOrders = () => {
-    // const { data: allOrders, isLoading, refetch } = useQuery('allOrders', () => fetch('http://localhost:5000/order', {
+    // const { data: allOrders, isLoading, refetch } = useQuery('allOrders', () => fetch('https://blooming-ravine-72087.herokuapp.com/order', {
     //     method:'GET',
     //             headers: {
     //                 'content-type': 'application/json',
@@ -18,7 +18,7 @@ const AllOrders = () => {
     const [orders, setOrders] = useState([]);
 
     useEffect( () => {
-        fetch('http://localhost:5000/order',{
+        fetch('https://blooming-ravine-72087.herokuapp.com/order',{
             method: 'GET',
             headers:{
                 'content-type': 'application/json',
@@ -34,7 +34,7 @@ const AllOrders = () => {
         const proceed = window.confirm('Are you sure you want to Cancel?');
         if (proceed) {
             console.log('deleting product with id, ', _id);
-            const url = `http://localhost:5000/order/${_id}`;
+            const url = `https://blooming-ravine-72087.herokuapp.com/order/${_id}`;
             fetch(url, {
                 method: 'DELETE'
             })

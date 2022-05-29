@@ -18,7 +18,7 @@ const AddTools = () => {
             description: event.target.description.value,
             img: event.target.img.value
         }
-        fetch('http://localhost:5000/service', {
+        fetch('https://blooming-ravine-72087.herokuapp.com/service', {
             method: "POST",
             headers: {
                 'content-type': "application/json"

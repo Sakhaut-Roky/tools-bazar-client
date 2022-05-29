@@ -6,7 +6,7 @@ const UserRow = ({ user, refetch }) => {
     const { email, role } = user;
 
     const makeAdmin = () => {
-        fetch(`http://localhost:5000/user/admin/${email}`,
+        fetch(`https://blooming-ravine-72087.herokuapp.com/user/admin/${email}`,
             {
                 method: 'PUT',
                 headers: {
@@ -35,7 +35,7 @@ const UserRow = ({ user, refetch }) => {
         const proceed = window.confirm('Are you sure you want to remove user?');
         if (proceed) {
             // console.log('deleting product with id, ', _id);
-            const url = `http://localhost:5000/user/${_id}`;
+            const url = `https://blooming-ravine-72087.herokuapp.com/user/${_id}`;
             fetch(url, {
                 method: 'DELETE'
             })

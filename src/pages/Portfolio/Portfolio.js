@@ -1,25 +1,25 @@
 import React from 'react';
-import sharif from '../../assets/sharif1.jpg';
+import pp from '../../assets/PP.jpg';
 
 const Portfolio = () => {
     return (
         <div>
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col lg:flex-row-reverse">
-                    <img height={200} width={200} src={sharif} alt='' />
+                    <img height={200} width={200} src={pp} alt='' />
                     <div>
-                        <h1 className="text-5xl font-bold">Sharif Hasan</h1>
+                        <h1 className="text-5xl font-bold">Sakhaut Hossin Roky</h1>
                         <p className="py-2">West dhanmondi, Dhaka</p>
-                        <p className="py-2">+8801640911511</p>
+                        <p className="py-2">+8801737327209</p>
                     </div>
                 </div>
             </div>
             <section className='text-left bg-base-200 mt-5'>
                 <div className='ml-5'>
                     <h2>Useful links & address</h2>
-                    <p>Email: hs.sharif819@gmail.com</p>
-                    <p>GitHub: https://github.com/hasansharif819</p>
-                    <p>LinkedIn: https://www.linkedin.com/in/sharif-hasan-073a58218/</p>
+                    <p>Email: sakhaut.roky18@gmail.com</p>
+                    <p>GitHub: https://github.com/Sakhaut-Roky</p>
+                    <p>LinkedIn: https://www.linkedin.com/in/md-sakhaut-hossin-a5870b1aa/</p>
                 </div>
                 <div className='ml-5'>
                     <h2>Languages</h2>

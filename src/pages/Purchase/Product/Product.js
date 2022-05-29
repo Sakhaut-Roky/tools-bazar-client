@@ -12,7 +12,7 @@ const Product = () => {
     // search query 
     const [service, setService] = useState({});
     useEffect( () => {
-        const url = `http://localhost:5000/purchase/${productId}`;
+        const url = `https://blooming-ravine-72087.herokuapp.com/purchase/${productId}`;
         fetch(url)
         .then(res => res.json())
         .then(data => setService(data))
@@ -49,7 +49,7 @@ const Product = () => {
             quantity: event.target.quantity.value,
             phone: event.target.phone.value
         }
-        fetch('http://localhost:5000/order', {
+        fetch('https://blooming-ravine-72087.herokuapp.com/order', {
             method: "POST",
             headers: {
                 'content-type': "application/json"

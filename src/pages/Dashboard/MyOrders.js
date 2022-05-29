@@ -9,7 +9,7 @@ const MyOrders = () => {
 
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/order/email?client=${user?.email}`, {
+            fetch(`https://blooming-ravine-72087.herokuapp.com/order/email?client=${user?.email}`, {
                 method: 'GET',
                 headers: {
                     authorization: `Bearer ${localStorage.getItem('accessToken')}`
@@ -27,7 +27,7 @@ const MyOrders = () => {
         const proceed = window.confirm('Are you sure you want to Cancel?');
         if (proceed) {
             console.log('deleting product with id, ', _id);
-            const url = `http://localhost:5000/order/${_id}`;
+            const url = `https://blooming-ravine-72087.herokuapp.com/order/${_id}`;
             fetch(url, {
                 method: 'DELETE'
             })
